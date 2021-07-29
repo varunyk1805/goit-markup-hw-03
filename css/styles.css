@@ -40,6 +40,8 @@ ul {
 
 .image {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .section {
@@ -80,6 +82,9 @@ ul {
 }
 
 .header .logo {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   margin-right: 93px;
 
   color: var(--header-logo-color);
@@ -112,6 +117,10 @@ ul {
 }
 
 .header .contact {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -140,18 +149,23 @@ ul {
 }
 
 .footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
   color: var(--primary-white-color);
 }
 
 .footer .address {
-  padding-top: 20px;
-
   color: var(--primary-white-color);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.address .item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer .contact {
@@ -304,9 +318,12 @@ ul {
   margin-left: 30px;
 }
 
-.team .name {
+.team-description {
   padding-top: 30px;
+  padding-bottom: 30px;
+}
 
+.team .name {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -316,8 +333,7 @@ ul {
 }
 
 .team .text {
-  padding-top: 10px;
-  padding-bottom: 30px;
+  margin-top: 10px;
 
   color: var(--primary-text-color);
   font-size: 16px;
@@ -330,8 +346,7 @@ ul {
 .list-buttons {
   display: flex;
   justify-content: center;
-  padding-bottom: 16px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .list-buttons .item:not(:first-child) {
@@ -398,7 +413,7 @@ ul {
 }
 
 .project-name {
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 
   color: var(--title-text-color);
   font-size: 18px;
